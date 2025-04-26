@@ -11,20 +11,26 @@ fn get_item(index: usize) {
 }
 
 fn main() {
+    println!("\n<=====================================>\n");
     let vec = vec![1, 2, 3, 4, 5];
     get_item(3);
 
+
     // Retrieve a value at a specific index
+    println!("<=====================================>");
     let third_value = vec[2];
-    //println!("The third value in the vector is: {}", third_value);
+    println!("The third value in the vector is: {}", third_value);
 
     // Retrieve the last value
+    println!("<=====================================>");
     let last_value = vec.last().unwrap();
-    //println!("The last value in the vector is: {}", last_value);
+    println!("The last value in the vector is: {}", last_value);
+
 
     // Retrieve the first value using pattern matching
-    // match vec.first() {
-    //     Some(first_value) => println!("The first value in the vector is: {}", first_value),
-    //     None => println!("The vector is empty!"),
-    // }
+    println!("<=====================================>"  );
+    match vec.first() {
+        Some(first_value) => println!("The first value in the vector is: {}", first_value),
+        None => println!("The vector is empty!"),
+    }
 }

@@ -4,6 +4,7 @@ enum Shape {
 }
 
 fn main() {
+    println!("<=====================================>");
     let shapes = vec![Shape::Circle(5.0), Shape::Square(3.0)];
 
     let total_area: f64 = shapes

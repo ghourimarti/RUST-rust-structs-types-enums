@@ -7,6 +7,7 @@ fn divide(x: i32, y: i32) -> Option<i32> {
 }
 
 fn main() {
+    println!("\n<=====================================>\n");
     let a = 10;
     let b = 2;
 

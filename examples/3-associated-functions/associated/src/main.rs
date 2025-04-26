@@ -20,6 +20,7 @@ impl User {
 }
 
 fn main() {
+    println!("\n<=====================================>\n");
     let mut new_user = User::new(
         String::from("alfredodeza"),
         String::from("alfreodeza@example.com"),

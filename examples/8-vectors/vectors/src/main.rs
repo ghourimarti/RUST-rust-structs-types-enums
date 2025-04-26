@@ -6,16 +6,19 @@ fn ownership() {
 
 fn modifiable() {
     let mut numbers = vec![1, 2, 3];
+    let mut number2 = numbers.clone(); // creates a copy of numbers
     let slice = &mut numbers[..]; // creates a slice of all elements in numbers
     slice[0] = 10;
     // This would fail!
-    //let other_slice = &numbers[..];
+    let other_slice = &number2[..];
     println!("slice = {:?}", slice);
 }
 
 fn main() {
+    println!("\n<=====================================>\n");
     // slices and vectors are similar. But slices are immutable depending on how they are borrowed
-    //ownership();
+    ownership();
+    println!("\n<=====================================>\n");
     modifiable();
 }
 

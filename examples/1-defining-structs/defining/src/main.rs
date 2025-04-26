@@ -7,6 +7,7 @@ struct Person {
 }
 
 fn main() {
+    println!("\n<=====================================>\n");
     println!("{:?}", Person {
         first_name: "John".to_string(),
         last_name: "Doe".to_string(),
